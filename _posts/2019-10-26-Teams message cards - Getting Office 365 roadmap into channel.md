@@ -4,8 +4,8 @@ title: Teams Message Cards - Part I (Microsoft 365 Roadmap)
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-Microsoft Teams has become an important part of the everyday worklife. It provides a lot of possibilities for integration with other services. 
-As a use case, I would like to present information from the Microsoft 365 Roadmap.
+Microsoft Teams has become an important part of the everyday worklife. It is a great collaboration tool for companies, providing files, chat and telephony. To extend even further, it provides a lot of possibilities for integration with other services. 
+I would like use those possibilities to present information from external sources in Teams channels. First out was the wish to gain insight into Microsoft's M365 Roadmap from Teams.
 
 Basically all new entries from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) should go in to a Teams channel for this purpose.
 
