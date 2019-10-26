@@ -12,7 +12,7 @@ Thingsinthe.cloud is a site for documenting cloud related things I learn and fig
 
 **Whoami:**
 
-- Einar Asting
+- **Einar Asting**
 - Always learning
 - Cloud first
 - Working as a consultant at Crayon AS
