@@ -22,7 +22,7 @@ avatar: /images/logo.png
 footer-links:
   dribbble:
   email: einar@thingsinthe.cloud
-  facebook:
+  facebook: https://www.facebook.com/einarast
   flickr:
   github: einast
   instagram:
@@ -41,7 +41,7 @@ footer-links:
 disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-150980754-1
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
