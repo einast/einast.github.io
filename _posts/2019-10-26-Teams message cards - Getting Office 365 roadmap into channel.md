@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Teams Message Cards - Part I (Microsoft 365 Roadmap)
+image: /images/TeamsRoadmapWebHook3.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
