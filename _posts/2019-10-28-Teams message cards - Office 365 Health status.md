@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Teams Message Cards - Part II (Office 365 Health Status)
-image: /posts/TeamsRoadmapWebHook3.PNG
+image: /posts/TeamsO365Health.png
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
@@ -10,6 +10,8 @@ This is part II of the series Teams message cards.
 [Part I](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/) started off easy, by parsing an RSS feed and present the data in a Teams channel.
 
 In this second part, we will dig a little deeper. We will look into how to get service health alerts from Office365 into a Teams channel. The use case is that we would like to be notified if any new or updated alerts are available in Teams, without the need of logging into the Office365 Admin portal. Key data from these alerts will be formatted as message cards, with color coding, and adding buttons if any links are available. The script will be run on a schedule (default is 15 minutes, but can be run as often as required).
+
+![](/images/TeamsO365Health.png)
 
 As this data is not available without logging in to the Office 365 portal, we need to create an authentication mechanism that handles that for us.
 

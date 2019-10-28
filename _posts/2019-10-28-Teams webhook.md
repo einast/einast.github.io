@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Teams Message Cards - Posting useful information
-image: /images/TeamsRoadmapWebHook3.PNG
+image: /images/TeamsO365Health.png
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 

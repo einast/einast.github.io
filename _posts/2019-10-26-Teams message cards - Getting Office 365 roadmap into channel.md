@@ -48,4 +48,4 @@ Please note that **Now** variable is needed to calculate the time, so don't chan
 - When you're happy, schedule the script to run on a schedule that aligns with your **$Hours** variable:
     - Being cloud-first, Azure automation is what I use
 
-Part II is [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/).
+Part **II** is available [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/).
