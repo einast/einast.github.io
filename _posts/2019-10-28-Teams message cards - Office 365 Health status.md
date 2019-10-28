@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teams Message Cards - Office 365 Health Status
+title: Teams Message Cards - Part II (Office 365 Health Status)
 image: /posts/TeamsRoadmapWebHook3.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
@@ -28,39 +28,39 @@ As this data is not available without logging in to the Office 365 portal, we ne
 - Click **New registration**
 - Give the application a sensible name, select **Accounts in this organizational directory only**, and click **Register**
 
-![](/images/AppReg01.PNG)
+![](/images/appreg01.PNG)
 
 - Copy the **Application ID**, we need that for later. Also keep a tab on the **Directory ID** as well, it *might* be required later.
-![](/images/AppReg02.PNG)
+![](/images/appreg02.PNG)
 
 - Click **View API permissions**
-![](/images/AppReg03.PNG)
+![](/images/appreg03.PNG)
 
 -Click **Add a permission**
-![](/images/AppReg04.PNG)
+![](/images/appreg04.PNG)
 
 -In the **Request API permissions** click **Office 365 Management APIs**
-![](/images/AppReg05.PNG)
+![](/images/appreg05.PNG)
 
 - In the **Office 365 Management APIs**, click **Application permissions**
-![](/images/AppReg06.PNG)
+![](/images/appreg06.PNG)
 
 - Expand **ServiceHealth** and select **ServiceHealth.Read**. Click **Add permissions**
-![](/images/AppReg07.PNG)
+![](/images/appreg07.PNG)
 
 - Now we need to remove the permission we don't need. Click the **Microsoft Graph (1), User.Read** and click **Remove permission** in the window that pop up. Confirm by clicking **Yes, remove**
-![](/images/AppReg08.PNG)
+![](/images/appreg08.PNG)
 
 - Now all permissions are in place. Click **Grant admin consent for *yourtenantname*** and confirm by clicking **Yes**
 
 - Now we need to generate a client secret for the script. Click **Certificates & secrets**, and **New client secret**
-![](/images/AppReg09.PNG)
+![](/images/appreg09.PNG)
 
 - Give the secret a sensible name, and set the expiration date (1 or 2 years, or never). Click **Add**
-![](/images/AppReg10.PNG)
+![](/images/appreg10.PNG)
 
 - Copy the secret to a secure place, as this is the last time you are able to. If you forget, you need to generate a new secret.
-![](/images/AppReg11.PNG)
+![](/images/appreg11.PNG)
 
 Now the Application ID and Application Key can be used in the script.
 
