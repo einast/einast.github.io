@@ -28,7 +28,7 @@ Further, I would like the message cards to be color coded based on the status of
 
 The script is pretty basic. All that is needed, is to adjust the **URI** and **Hours** variables.
 
-```Powershell:
+```
 # User defined variables
 $URI = 'Teams webhook URI'
 $Roadmap = 'https://www.microsoft.com/en-us/microsoft-365/RoadmapFeatureRSS'
