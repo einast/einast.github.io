@@ -9,8 +9,8 @@ categories: [Powershell, Office 365, Microsoft Teams]
 
 In this series of posts, I will use webhooks to post useful information into Teams channels. (Please note that there is other ways to achieve the same, for example posting to Teams by using the Graph API).
 
-- [Part I - Microsoft 365 Roadmap](/posts/2019-10-26-Teams%20message%20cards%20-%20Getting%20Office%20365%20roadmap%20into%20channel.md): This is an introduction on how to get info from the Microsoft 365 Roadmap RSS feed
-- Part II - Microsoft Message Center - Incidents: Here we will look at how to present incident information from your Office 365 tenant
+- [Part I - Microsoft 365 Roadmap](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/): This is an introduction on how to get info from the Microsoft 365 Roadmap RSS feed
+- [Part II - Microsoft Message Center - Incidents](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/): Here we will look at how to present incident information from your Office 365 tenant
 - Part III - Microsoft Message Center - Announcements: in this part, I will present a method of presenting announcements for your Office 365 tenant.
 - Part IV - Azure Resource Health - This last post will show how to present service outage/incidents from your Azure tenant.
 

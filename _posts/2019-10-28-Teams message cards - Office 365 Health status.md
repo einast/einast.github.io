@@ -7,7 +7,7 @@ categories: [Powershell, Office 365, Microsoft Teams]
 
 This is part II of the series Teams message cards.
 
-[Part I](/posts/2019-10-26-Teams%20message%20cards%20-%20Getting%20Office%20365%20roadmap%20into%20channel.md) started off easy, by parsing an RSS feed and present the data in a Teams channel.
+[Part I](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/) started off easy, by parsing an RSS feed and present the data in a Teams channel.
 
 In this second part, we will dig a little deeper. We will look into how to get service health alerts from Office365 into a Teams channel. The use case is that we would like to be notified if any new or updated alerts are available in Teams, without the need of logging into the Office365 Admin portal. Key data from these alerts will be formatted as message cards, with color coding, and adding buttons if any links are available. The script will be run on a schedule (default is 15 minutes, but can be run as often as required).
 
@@ -86,16 +86,21 @@ $Minutes = '15'
 Like in the previous script, the variables you need to adjust are these:
 
 **\$ApplicationID** - from the generated application in step 1
+
 **\$ApplicationKey** - from the generated application in step 1
+
 **\$TenantDomain** - your FQDN primary domain
+
 **\$URI** - the generated URI from the creation of the incoming webhook
+
 **\$Minutes** - The last x minutes the script will look for updates. Default in the script is 15 minutes, as I run the script on that schedule.
+
 
 The script will request new or updated incidents by using the provided application ID and key. It will color code the incident based on state.
 
-**Red**: Incident
-**Yellow**: Advisory
-**Green**: Incidents with an end time.
+- **Red**: Incident
+- **Yellow**: Advisory
+- **Green**: Incidents with an end time.
 
 As the same incident can show up several times, the script picks the latest index on an incident, to avoid duplicates.
 
