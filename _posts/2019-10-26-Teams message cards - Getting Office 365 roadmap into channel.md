@@ -37,4 +37,4 @@ Further, I would like the message cards to be color coded based on the status of
 - When you're happy, schedule the script to run on a schedule that aligns with your **$Hours** variable:
     - Being cloud-first, Azure automation is what I use
 
-Parts **II** and **III** will follow shortly.
+Parts **II**, ***III*** and **IV** will follow shortly.
