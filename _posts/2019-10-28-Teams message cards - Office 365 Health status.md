@@ -53,9 +53,9 @@ As this data is not available without logging in to the Office 365 portal, we ne
 - Now we need to remove the permission we don't need. Click the **Microsoft Graph (1), User.Read** and click **Remove permission** in the window that pop up. Confirm by clicking **Yes, remove**
 ![](/images/appreg08.PNG)
 
-- Now all permissions are in place. Click **Grant admin consent for *yourtenantname*** and confirm by clicking **Yes**
+- All permissions are in place. Click **Grant admin consent for *yourtenantname*** and confirm by clicking **Yes**
 
-- Now we need to generate a client secret for the script. Click **Certificates & secrets**, and **New client secret**
+- Further we need to generate a client secret for the script. Click **Certificates & secrets**, and **New client secret**
 ![](/images/appreg09.PNG)
 
 - Give the secret a sensible name, and set the expiration date (1 or 2 years, or never). Click **Add**
