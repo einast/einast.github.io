@@ -15,7 +15,7 @@ Thingsinthe.cloud is a site for documenting cloud related things I learn and fig
 - **Einar Asting**
 - Always learning
 - Cloud first
-- Working as a consultant at Crayon AS
+- Working as a cloud consultant at [Crayon AS](https://www.crayon.com/nb-NO/)
 - Dad and husband
 - More info at [LinkedIn](https://www.linkedin.com/in/easting/)
 
