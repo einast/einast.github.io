@@ -7,6 +7,10 @@ categories: [Powershell, Office 365, Microsoft Teams]
 
 This is part I of a series where we dig into how to present useful information from the Microsoft 365 services.
 
+Tools used:
+- Powershell
+- [Message Card playground](https://messagecardplayground.azurewebsites.net/)
+
 First out is how to gain insight into Microsoft's M365 Roadmap by posting updates to a Teams channel.
 
 Basically all new entries from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) should go in to a Teams channel for this purpose.
@@ -22,7 +26,7 @@ Further, I would like the message cards to be color coded based on the status of
 - Yellow: Rolling out
 - Green: Launched
 
- This resulted in a short script to provide the required functionality.
+This resulted in a short script to show any updates from the roadmap in the last 24 hours.
 
 ![](/images/TeamsRoadmapWebHook3.PNG)
 
@@ -36,7 +40,7 @@ $Hours = '24'
 $Now = Get-Date 
 ```
 
-Please note that **Now** variable is needed to calculate the time, so don't change that.
+Please note that **\$Now** variable is needed to calculate the time, so don't change that.
 
 #### Setup ####
 
