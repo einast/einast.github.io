@@ -22,14 +22,14 @@ avatar: /images/logo.png
 footer-links:
   dribbble:
   email: einar@thingsinthe.cloud
-  facebook: https://www.facebook.com/einarast
+  facebook:
   flickr:
   github: einast
   instagram:
   linkedin: easting
   pinterest:
   rss: rss
-  twitter: 
+  twitter: einar_asting
   stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
