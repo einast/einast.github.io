@@ -5,7 +5,7 @@ image: /images/TeamsRoadmapWebHook3.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-This is part I of a series where we dig into how to present useful information from the Microsoft 365 services.
+This is part I of a series where the goal is to both create a reusable template as well as be able to presente useful information from Microsoft in Teams channels.
 
 Tools used:
 - Powershell
@@ -150,5 +150,7 @@ Invoke-RestMethod -uri $uri -Method Post -body $Payload -ContentType 'applicatio
 
 - When you're happy, schedule the script to run on a schedule that aligns with your **\$Hours** variable:
     - Being cloud-first, Azure automation is what I use
+
+This script is the base for the next scripts.
 
 Part **II** is available [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/).
