@@ -13,7 +13,5 @@ Not being a Powershell guru, my goal was to have a template script that I easily
 
 - [Part I - Microsoft 365 Roadmap](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/): This is an introduction on how to get info from the Microsoft 365 Roadmap RSS feed. It is the first iteration of the script that was further developed to other use cases.
 - [Part II - Microsoft Message Center - Incidents](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/): Further development of the script to present incident information from your Office 365 tenant
-- Part III - Microsoft Message Center - Announcements: This script is similar to the previous, but with some adaptions to present announcements for your Office 365 tenant.
-- Part IV - Azure Resource Health - This last post is about presenting service outage/incidents from your Azure tenant.
-
-I will update the links here once the posts are ready.
+- [Part III - Microsoft Message Center - Announcements](https://thingsinthe.cloud/Teamsmessagecards-MessageCenter/): This script is similar to the previous, but with some adaptions to present announcements for your Office 365 tenant.
+- [Part IV - Azure Resource Health](https://thingsinthe.cloud/AzureHealth/): This last post is about presenting service outage/incidents from your Azure tenant.
