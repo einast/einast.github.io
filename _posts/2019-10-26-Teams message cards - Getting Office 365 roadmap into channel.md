@@ -144,7 +144,7 @@ Lastly, *if* there are any new updates, post them in the defined Teams channel:
 Invoke-RestMethod -uri $uri -Method Post -body $Payload -ContentType 'application/json; charset=utf-8'
 ```
 
-- When you're happy, schedule the script to run on a schedule that aligns with your **\$Hours** variable:
+- When you're happy, set the script to run on a schedule that aligns with your **\$Hours** variable:
     - Being cloud-first, Azure automation is what I use
 
 This script is the base for the next scripts.
