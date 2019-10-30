@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Teams Message Cards - Part II (Office 365 Health Status)
-image: /posts/TeamsO365Health.png
+image: /images/TeamsO365Health.png
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
@@ -77,7 +77,7 @@ Copy the URI from the webhook you set up.
 - Download the script from [Github](https://github.com/einast/PS_M365_scripts/blob/master/M365HealthStatus.ps1)
 
 - Adjust the user variables:
-```
+```powershell
 $ApplicationID = 'application ID'
 $ApplicationKey = 'application key'
 $TenantDomain = 'your FQDN' # Alternatively use DirectoryID if tenant domain fails
@@ -107,6 +107,15 @@ The script will request new or updated incidents by using the provided applicati
 As the same incident can show up several times, the script picks the latest index on an incident, to avoid duplicates.
 
 It will then create one or more payloads, and post in the Teams channel.
+
+As the base of the script is the same, I will not cover that here. The difference between this script and the first, is that we need to authenticate in order to get any data. This includes requesting a token (lifetime of 1 hour) which is used to authenticate against your tenant:
+
+```powershell
+$oauth = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$($tenantdomain)/oauth2/token?api-version=1.0" -Body $body
+    $headerParams = @{'Authorization'="$($oauth.token_type) $($oauth.access_token)"}
+    $messages = (Invoke-RestMethod -Uri "https://manage.office.com/api/v1.0/$($tenantdomain)/ServiceComms/Messages" -Headers $headerParams -Method Get)
+    $incidents = $messages.Value | Where-Object {$_.MessageType -eq 'MessageCenter'}
+```
 
 **4. Test**
 
