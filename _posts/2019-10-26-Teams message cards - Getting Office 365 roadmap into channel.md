@@ -30,7 +30,17 @@ This resulted in a short script to show any updates from the roadmap in the last
 
 ![](/images/TeamsRoadmapWebHook3.PNG)
 
-The script is pretty basic. All that is needed, is to adjust the **URI** and **Hours** variables.
+
+#### Setup ####
+
+- Set up an [incoming webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors-using) in your selected Teams channel
+- Copy the URI that the connector generated (you need that later)
+- Download the script from [here](https://github.com/einast/PS_M365_scripts/blob/master/M365RoadmapUpdates.ps1)
+- Adjust the user defined variables to fit your environment, as mentioned above
+- Do a dry-run to see if anything is posted. If not, try to adjust the **\$Hours** variable to a higher value
+
+#### Walkthrough ####
+The script is pretty basic. All that is needed, is to adjust the **\$URI** and **\$Hours** variables.
 
 ```powershell
 # User defined variables
@@ -138,14 +148,7 @@ Lastly, *if* there are any new updates, post them in the defined Teams channel:
 Invoke-RestMethod -uri $uri -Method Post -body $Payload -ContentType 'application/json; charset=utf-8'
 ```
 
-#### Setup ####
-
-- Set up an [incoming webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors-using) in your selected Teams channel
-- Copy the URI that the connector generated (you need that later)
-- Download the script from [here](https://github.com/einast/PS_M365_scripts/blob/master/M365RoadmapUpdates.ps1)
-- Adjust the user defined variables to fit your environment, as mentioned above
-- Do a dry-run to see if anything is posted. If not, try to adjust the **$Hours** variable to a higher value
-- When you're happy, schedule the script to run on a schedule that aligns with your **$Hours** variable:
+- When you're happy, schedule the script to run on a schedule that aligns with your **\$Hours** variable:
     - Being cloud-first, Azure automation is what I use
 
 Part **II** is available [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/).
