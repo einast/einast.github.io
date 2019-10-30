@@ -67,7 +67,7 @@ Like in the previous script, the variables you need to adjust are these:
 
 **\$Hours** - The last x hours the script will look for updates. Default in the script is 24 hours, as I run the script on that schedule.
 
-**\$color** - The color of the card in HTML code. I set mine to blue, but feel free to adjust, or simply go without any color coding. In this script I choose the same color for all cards.
+**\$color** - The color of the card in HTML code. I set mine to blue, but feel free to adjust, or simply go without any color coding. *In this script I choose the same color for all cards*.
 
 The script will request new or updated feature announcements by using the provided application ID and key. 
 
