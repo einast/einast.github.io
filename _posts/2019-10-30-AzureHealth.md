@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Teams Message Cards - Part III (Azure Health Status)
+title: Teams Message Cards - Part IV (Azure Health Status)
 image: /images/AzureHealth.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-This is part III of the series Teams message cards.
+This is part IV of the series Teams message cards.
 
 You'll find the previous parts here:
  [Part I](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/)
  [Part II](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/)
- [Part III](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/)
+ [Part III](https://thingsinthe.cloud/Teamsmessagecards-MessageCenter/)
 
 This is the last part of the series. This time we'll get current service health events in the Azure subscription.  The script will be run on a schedule (default is every 12 hours, but can be run as often as required).
 
