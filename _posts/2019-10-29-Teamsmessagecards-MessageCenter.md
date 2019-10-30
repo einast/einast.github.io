@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teams Message Cards - Part II (Office 365 Health Status)
+title: Teams Message Cards - Part III (Office 365 Message Center)
 image: /images/TeamsMessageCenter.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
