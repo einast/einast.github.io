@@ -9,6 +9,8 @@ Microsoft Teams has become an important part of the everyday worklife. It is a g
 
 In this series of posts, I will explore Powershell and webhooks to post useful information into Teams channels.
 
+![](/images/TeamsMessageCenter.PNG)
+
 Not being a Powershell guru, my goal was to have a template script that I easily could adapt to different use cases. As new ideas popped up, I choose to split up in separate posts.
 
 - [Part I - Microsoft 365 Roadmap](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/): This is an introduction on how to get info from the Microsoft 365 Roadmap RSS feed. It is the first iteration of the script that was further developed to other use cases.
