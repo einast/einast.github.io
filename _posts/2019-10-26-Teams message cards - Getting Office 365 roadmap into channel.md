@@ -32,7 +32,7 @@ This resulted in a short script to show any updates from the roadmap in the last
 
 The script is pretty basic. All that is needed, is to adjust the **URI** and **Hours** variables.
 
-```
+```powershell
 # User defined variables
 $URI = 'Teams webhook URI'
 $Roadmap = 'https://www.microsoft.com/en-us/microsoft-365/RoadmapFeatureRSS'
@@ -41,6 +41,102 @@ $Now = Get-Date
 ```
 
 Please note that **\$Now** variable is needed to calculate the time, so don't change that.
+
+To request the data, it runs an Invoke-RestMethod with the variables defined.
+
+```powershell
+# Request data
+$messages = (Invoke-RestMethod -Uri $Roadmap -Headers $headerParams -Method Get)
+```
+
+The script then:
+- Goes through any new announced features and calculates if they happened within the defined timeframe (last 24 hours)
+- Further it does a count of the message.category values, as we need to separate the first value from the rest
+- In order to avoid a failed JSON payload, we need to convert the string to JSON before we build the payload
+- Then the script will color code each entry based on state of the roadmap item
+
+```powershell
+# Parse data
+ForEach ($msg in $messages){
+
+        # Add updates posted last 24 hours                
+        If (($Now - [datetime]$msg.pubDate).TotalHours -le $Hours) {
+                
+                # Count, join and prepare category for use in the card
+                $categoryno = $msg.category.Count
+                $category = $msg.category[1..$categoryno] -join ", "
+                
+                # Convert MessageText to JSON beforehand, if not the payload will fail.
+                $Message = ConvertTo-Json $msg.description
+
+                #Set the color line of the card according to the Status of the environment
+                if ($msg.category[0] -eq "In development")
+                    {
+                    $color = "ff0000"
+                    }
+                    else
+                        {
+                            if ($msg.category[0] -eq "Rolling out")
+                                {
+                                    $color = "ffff00"
+                                    }
+                                    else
+                                        {
+                                            $color = "00cc00"
+                                            }
+                                 }
+```
+
+Then we use our data to create a JSON payload. I choose to create it with a here-string, adding the values and setting the color.
+
+The [message card playground](https://messagecardplayground.azurewebsites.net/) is a good place to validate your JSON payload.
+
+```powershell   
+# Generate payload(s)          
+$Payload =  @"
+{
+    "@context": "https://schema.org/extensions",
+    "@type": "MessageCard",
+    "potentialAction": [
+            {
+            "@type": "OpenUri",
+            "name": "More info",
+            "targets": [
+                {
+                    "os": "default",
+                    "uri": "$($msg.Link)"
+                }
+            ]
+        },
+     ],
+    "sections": [
+        {
+            "facts": [
+                {
+                    "name": "Status:",
+                    "value": "$($msg.category[0])"
+                },
+                {
+                    "name": "Category:",
+                    "value": "$($category)"
+                }
+            ],
+            "text": $($message)
+        }
+    ],
+    "summary": "$($msg.Title)",
+    "themeColor": "$($color)",
+    "title": "Feature ID: $($msg.guid.'#text') - $($msg.Title)"
+}
+"@
+```
+
+Lastly, *if* there are any new updates, post them in the defined Teams channel:
+
+```powershell
+# If any new posts, add to Teams
+Invoke-RestMethod -uri $uri -Method Post -body $Payload -ContentType 'application/json; charset=utf-8'
+```
 
 #### Setup ####
 
