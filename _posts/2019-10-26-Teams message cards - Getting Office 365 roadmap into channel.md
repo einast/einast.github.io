@@ -5,7 +5,7 @@ image: /images/TeamsRoadmapWebHook3.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-This is part I of a series where the goal is to both create a reusable template as well as be able to presente useful information from Microsoft in Teams channels.
+This is part I of a series where the goal is to both create a reusable template as well as be able to present useful information from Microsoft in Teams channels.
 
 Tools used:
 - Powershell
