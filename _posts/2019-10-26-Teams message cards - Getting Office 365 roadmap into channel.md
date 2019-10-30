@@ -5,17 +5,13 @@ image: /images/TeamsRoadmapWebHook3.PNG
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-This is part I of a series where the goal is to both create a reusable template as well as be able to present useful information from Microsoft in Teams channels.
+This is part I of a series where the goal is to both create a reusable template as well as be able to present useful information from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) in a Teams channel.
 
 Tools used:
 - Powershell
 - [Message Card playground](https://messagecardplayground.azurewebsites.net/)
 
-First out is how to gain insight into Microsoft's M365 Roadmap by posting updates to a Teams channel.
-
-Basically all new entries from the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) should go in to a Teams channel for this purpose.
-
-As the same URL provides an RSS feed, I can use Powershell to:
+As the roadmap URL provides an RSS feed, I can use Powershell to:
 - Get data (I would like to do this once per day)
 - Parse the data, select the parts I want
 - Adapt the output as JSON in a supported Message Card format
