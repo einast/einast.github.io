@@ -9,7 +9,7 @@ At customers, we normally have users split on the different Office ProPlus updat
 
 In order to get information about updates for these Office ProPlus channels, we don't want to be dependent on checking Microsoft's website. Instead we would like to get the same information posted into one or more Microsoft Teams channels as soon as there are any new updates available.
 
-####High-level
+#### High-level ####
 I will re-use the code from my previous posts [Teams Message Cards - Posting useful information](https://thingsinthe.cloud/Teams-webhook/) to facilitate this.
 
 As many use more or all of the Office ProPlus Monthly Channel, Semi-Annual Channel (Targeted) and Semi-Annual Channel, there are quite a few updates to keep track on.
@@ -57,7 +57,7 @@ I started by trying to use the same cmdlet, however, it did not work. Running th
 
 To overcome the problem, I used *Invoke-RestMethod*. This command is better suited for XML and JSON parsing, but it works fast and I was able to read the page into a variable.
 
-####Timestamp
+#### Timestamp ####
 Continuing, I first needed to parse just the timestamp into a separate variable. Since the web page is pretty basic, I choose to use *regex*.
 
 There are many tools available that are helpful for regex testing. This time I used [Regexr](https://regexr.com/).
@@ -71,13 +71,13 @@ After parsing the webpage, and building the regular expression for the timestamp
 ```
 This will grab the update timestamp from the webpage.
 
-####Latest update - heading
+#### Latest update - heading ####
 I would like to give the cards title based on the title of the update. In regexr.com, I built this expression:
 ```
 (?<=\<h2.*?\>)(.*?)(?=<\/h2\>)
 ```
 
-####Latest update - content
+#### Latest update - content ####
 Again using regexr.com, I built the following expression for the latest posted update:
 ```
 (\<h2.+?\>)((.|\n)+?(?=<h2.+?\>))
@@ -86,7 +86,7 @@ This grabs the text starting with the first **\<h2>** tag and ending before the 
 
 In the script, I use the patterns above to get the data I want to be presented in one (or more) Teams channels. The rest is basically reusing the scripts created in the previous posts.
 
-#### The script
+#### The script ####
 What is needed, is to set the user variables:
 ```powershell
 # User defined variables
@@ -115,4 +115,4 @@ As usual, I run the script using Azure Automation runbooks.
 
 You find the script here: [OfficeProPlusupdates.ps1](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
 
-#####Disclaimer: The script is tested and working at the moment. If Microsoft changes the layout of their pages, things might stop working.
+##### Disclaimer: The script is tested and working at the moment. If Microsoft changes the layout of their pages, things might stop working. ####
