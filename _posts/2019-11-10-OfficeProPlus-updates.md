@@ -5,11 +5,12 @@ image: /images/O365_Monthly_updates_(Office365_Test)_Microsoft_Teams-preview.png
 categories: [Powershell, Office 365, Microsoft Teams]
 ---
 
-At a customer, we have users split on the different Office ProPlus update channels. A few users on the Monthly channel, some more on the Semi-Annual Channel (targeted), and the major set of users on the Semi-Annual Channel. This is to be able to test new versions and features in a controlled matter. 
+At customers, we normally have users split on the different Office ProPlus update channels. A few users on the Monthly channel, some more on the Semi-Annual Channel (targeted), and the major set of users on the Semi-Annual Channel. This is to be able to test new versions and features in a controlled matter. 
 
 In order to get information about updates for these Office ProPlus channels, we don't want to be dependent on checking Microsoft's website. Instead we would like to get the same information posted into one or more Microsoft Teams channels as soon as there are any new updates available.
 
-I will re-use the code from my previous posts [Teams Message Cards - Posting useful information](https://thingsinthe.cloud/Teams-webhook/) to facilitate this. Also this post is meant to provide some guidelines in HTML parsing with Powershell.
+####High-level
+I will re-use the code from my previous posts [Teams Message Cards - Posting useful information](https://thingsinthe.cloud/Teams-webhook/) to facilitate this.
 
 As many use more or all of the Office ProPlus Monthly Channel, Semi-Annual Channel (Targeted) and Semi-Annual Channel, there are quite a few updates to keep track on.
 
@@ -20,7 +21,7 @@ In this use case, I would like to get the latest update from for example ["Relea
 Screenshot of what I want (latest entry only):
 ![](/images/Monthly.PNG)
 
-However, looking at the page, all entries from the current year is listed, while I only want the latest one at the top:
+However, looking at the page, all entries from the current year are listed chronologically, while I only want the latest one at the top:
 ![](/images/Monthly02.PNG)
 
 I took a look at the page source to see if there were any tags I could hook in to. I needed:
@@ -34,9 +35,9 @@ For the first requirement, I spotted a timestamp tag:
 ```html
 <meta name="updated_at" content="2019-11-01 08:22 PM" />
 ```
-Nice! This one can be used for time calculation.
+Great! This one can be used for time calculation.
 
-Further I needed to find a pattern for the update posts. Looking further into the code, I found that all posts from the newest to the latest, are all between two **\<h2>** tags:
+Further I needed to find a pattern for the update posts. Looking further into the code, I found that all posts from the newest to the latest, are all between two **\<h2>** tags. Also I see the header I want within the **\<h2>** tags:
 
 ```html
 <h2 id="october-15">October 15</h2>
@@ -56,7 +57,7 @@ I started by trying to use the same cmdlet, however, it did not work. Running th
 
 To overcome the problem, I used *Invoke-RestMethod*. This command is better suited for XML and JSON parsing, but it works fast and I was able to read the page into a variable.
 
-**Timestamp**
+####Timestamp
 Continuing, I first needed to parse just the timestamp into a separate variable. Since the web page is pretty basic, I choose to use *regex*.
 
 There are many tools available that are helpful for regex testing. This time I used [Regexr](https://regexr.com/).
@@ -70,13 +71,13 @@ After parsing the webpage, and building the regular expression for the timestamp
 ```
 This will grab the update timestamp from the webpage.
 
-**Latest update - heading**
+####Latest update - heading
 I would like to give the cards title based on the title of the update. In regexr.com, I built this expression:
 ```
 (?<=\<h2.*?\>)(.*?)(?=<\/h2\>)
 ```
 
-**Latest update - content**
+####Latest update - content
 Again using regexr.com, I built the following expression for the latest posted update:
 ```
 (\<h2.+?\>)((.|\n)+?(?=<h2.+?\>))
@@ -85,6 +86,7 @@ This grabs the text starting with the first **\<h2>** tag and ending before the 
 
 In the script, I use the patterns above to get the data I want to be presented in one (or more) Teams channels. The rest is basically reusing the scripts created in the previous posts.
 
+#### The script
 What is needed, is to set the user variables:
 ```powershell
 # User defined variables
