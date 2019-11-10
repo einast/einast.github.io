@@ -2,7 +2,7 @@
 layout: post
 title: Office ProPlus updates - to Teams channels
 image: /images/O365_Monthly_updates_(Office365_Test)_Microsoft_Teams-preview.png
-categories: [Powershell, Office 365, Microsoft Teams]
+categories: [Powershell, Office 365, Microsoft Teams, OfficeProPlus]
 ---
 
 At customers, we normally have users split on the different Office ProPlus update channels. A few users on the Monthly channel, some more on the Semi-Annual Channel (targeted), and the major set of users on the Semi-Annual Channel. This is to be able to test new versions and features in a controlled matter. 
