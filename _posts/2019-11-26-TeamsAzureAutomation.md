@@ -54,7 +54,7 @@ $AzVariableTeamsURIName = 'AzVariableMCURI'
 With that in place I need to create the variable assets with the same names in Azure Automation.
 
 
-#####Configure Azure Automation variable assets
+##### Configure Azure Automation variable assets
 *(For this post, I will create the variable assets in the azure portal. Normally I use powershell and the [Azure automation ISE Addon module](https://github.com/azureautomation/azure-automation-ise-addon)*.
 
 In the Azure portal, search for **Automation**. Click **Automation account** (if haven't configured one, you need to do that first)
