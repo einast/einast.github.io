@@ -24,7 +24,7 @@ I will show how I use variable assets in two scripts, for two different use case
 
 *All the scripts I have adapted for Azure Automation, are shared at the end of this post.*
 
-#### Securing your sensitive data
+#### 1. Securing your sensitive data
 
 This is a common scenario. You have a set of scripts that contains one or more sensitive variables. Like passwords.
 
@@ -54,7 +54,7 @@ $AzVariableTeamsURIName = 'AzVariableMCURI'
 With that in place I need to create the variable assets with the same names in Azure Automation.
 
 
-##### Configure Azure Automation variable assets
+###### Configure Azure Automation variable assets
 *(For this post, I will create the variable assets in the Azure portal. Normally I use Powershell and the [Azure automation ISE Addon module](https://github.com/azureautomation/azure-automation-ise-addon)*.
 
 In the Azure portal, search for **Automation**. Click **Automation account** (if haven't configured one, you need to do that first)
@@ -103,7 +103,7 @@ Doing a dry run shows that the script works as intended, the runbook calls the v
 
 *You also have variable asset type for credentials (username and password), I did not use these in this script*
 
-#### Using variables for comparison of data - avoid duplicates
+#### 2. Using variables for comparison of data - avoid duplicates
 
 I created a script for checking for **Office ProPlus updates to Teams channels** earlier.
 
