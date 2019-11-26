@@ -118,8 +118,6 @@ To avoid this, I would like to add some checks to see if there in fact was a new
 I outlined a workflow on how I would like to solve this.
 
 ![](/images/AzureAutomationWorkflow.png)
-
- Since I possibly have to create Azure Automation variables that does not exist, I will use cmdlets from the **AzureRM.Automation module**.
  
  I need to declare some new variables in the script. I add the necessary variables for the parameters I will run in the script:
 
@@ -142,7 +140,8 @@ $AzAutomationPayloadSACVariable = 'Name of your Automation Semi-Annual Payload V
 ```
 **Explanation:**
 
-The first two I need since I use *Get-AzureRmAutomationVariable* and not *Get-AutomationVariable*. The reason being some issues with reading out the values.
+The first two I need since I use *Get-AzureRmAutomationVariable* and not *Get-AutomationVariable*. The reason being some issues with reading out the values using *Get-AutomationVariable* in my environment. Since I do not use encrypted values, this is not a problem.
+
 ```$AzAutomationAccountNameVariable``` Name of your Automation Account Name Variable
 
 ```$AzAutomationResourceGroupVariable``` Name of your Automation Resource Group Variable
