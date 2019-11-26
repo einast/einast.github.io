@@ -171,7 +171,7 @@ If ($payload -ne $payload.stored.in.Azure) {
 
 In Azure Automation, I create the necessary variable assets for the Automation parts and the Office ProPlus update channels, using the same name as I declared in the script. As mentioned, I did not create the payload variables, since the script will create them for me if they don't exist.
 
-[See the previous section on how to create the variable assets in Azure Automation](#Configure-Azure-Automation-variable-assets)
+[See the previous section on how to create the variable assets in Azure Automation](#configure-azure-automation-variable-assets)
 
 For these variable assets, I did not use encryption.
 
