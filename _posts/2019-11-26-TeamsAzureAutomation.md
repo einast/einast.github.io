@@ -2,7 +2,7 @@
 layout: post
 title: Utilizing Azure Automation variables in Runbooks
 image: /images/AzAutoTeamsHeader.png
-categories: [Powershell, Office 365, Microsoft Teams]
+categories: [Powershell, Office 365, Microsoft Teams, Azure Automation]
 ---
 I have shared some scripts in my earlier [posts](https://thingsinthe.cloud/Teams-webhook/). However, as I run the scripts in Azure Automation, I made some adjustments in the versions I use in my setup.
 
@@ -55,7 +55,7 @@ With that in place I need to create the variable assets with the same names in A
 
 
 ##### Configure Azure Automation variable assets
-*(For this post, I will create the variable assets in the azure portal. Normally I use powershell and the [Azure automation ISE Addon module](https://github.com/azureautomation/azure-automation-ise-addon)*.
+*(For this post, I will create the variable assets in the Azure portal. Normally I use Powershell and the [Azure automation ISE Addon module](https://github.com/azureautomation/azure-automation-ise-addon)*.
 
 In the Azure portal, search for **Automation**. Click **Automation account** (if haven't configured one, you need to do that first)
 
