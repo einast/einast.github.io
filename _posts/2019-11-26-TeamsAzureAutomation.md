@@ -196,4 +196,4 @@ Lastly I change the timeframe back to my desired time window to look for updates
 
 This shows that the Azure Automation variable assets are useful for different scenarios, not just to store credentials.
 
-The new Azure Automation runbooks scripts can be found [here](https://github.com/einast/PS_M365_scripts/AzureAutomation).
+The new Azure Automation runbooks scripts can be found [here](https://github.com/einast/PS_M365_scripts/tree/master/AzureAutomation).
