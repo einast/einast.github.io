@@ -12,7 +12,7 @@ So I needed to rewrite my code to comply with the security requirements. I used 
 
 Then I made a few changes:
 
-- Replaced some of the used cmdlets with ones that did not require a Run As account, also following the best practice recommended by Microsoft.
+- Replaced some of the used cmdlets with ones that did not require a Run As account, also following the best practice [recommended](https://docs.microsoft.com/en-us/azure/automation/shared-resources/variables#using-a-variable-in-a-runbook-or-dsc-configuration) by Microsoft.
 
 - Manually create the payload asset variables (in encrypted form) before running the script (as opposed to earlier, where they script created these assets if not already there).
 
