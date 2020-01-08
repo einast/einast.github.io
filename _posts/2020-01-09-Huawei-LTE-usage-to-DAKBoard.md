@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Huawei B818 LTE usage on a DAKboard
-image: /images/DAKBoard04.png
+image: /images/DAKBoard04.PNG
 categories: [Powershell, Home Automation, DAKboard]
 ---
 
@@ -32,7 +32,7 @@ Two possible options stood out:
 - Website/iframe
 - External Data/JSON
 
-![](/images/DAKBoard01.png)
+![](/images/DAKBoard01.PNG)
 
 The JSON seemed the better way, as it will embed nicely with the screen's appearance, keeping fonts, colors etc.
 
@@ -55,7 +55,7 @@ http://192.168.1.1/api/monitoring/month_statistics
 
 Opening that URL, I saw the following.
 
-![](/images/DAKBoard02.png)
+![](/images/DAKBoard02.PNG)
 
 This will simplify things, as I can use this without calling a browser session, logging in and navigating to the right page. I also will run the script from a server in my home network, so I have access directly to the API.
 
@@ -79,7 +79,7 @@ To get some initial data and verify functionality, I ran the script manually. I 
 
 I went back to the DAKboard configuration panel, and prepared a JSON block. I added the URL where I uploaded the JSON file, and let DAKboard parse it. I see the fields I created, and the values in the file.
 
-![](/images/DAKBoard03.png)
+![](/images/DAKBoard03.PNG)
 
 *Remember to use https, not http.*
 
@@ -96,6 +96,6 @@ The script is set to run every hour, aligning with the refresh of the DAKBoard.
 
 The completed script now looks like this on the DAKboard (sorry for the Norwegian, please adapt as you see fit). The JSON is parsed nicely aligning with the other design elements of the screen:
 
-![](/images/DAKBoard04.png)
+![](/images/DAKBoard04.PNG)
 
 Now I can have the family members looking at the DAKboard to keep an eye on the bandwidth usage.
