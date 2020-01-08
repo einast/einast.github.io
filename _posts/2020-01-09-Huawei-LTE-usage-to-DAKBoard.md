@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Huawei B818 LTE usage on a DAKboard
-image: /images/TeamsRoadmapWebHook3.PNG
+image: /images/DAKBoard04.png
 categories: [Powershell, Home Automation, DAKboard]
 ---
 
