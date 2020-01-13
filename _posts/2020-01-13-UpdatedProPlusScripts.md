@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New versions of the Office 365 ProPlus updates Teams scripts
-image: /images/O365_Monthly_updates_(Office365_Test)_Microsoft_Teams.png
+image: /images/ProPlusScriptMitigatedPreview.png
 categories: [Powershell, Office 365, Microsoft Teams, Azure Automation]
 ---
 
