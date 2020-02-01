@@ -30,6 +30,7 @@ $EndpointURL = 'https://docs.microsoft.com/en-us/office365/enterprise/urls-and-i
 I formatted the message cards in the following way:
 
 - A short change description
+- Datestamp of the change
 - A link to the change (although in JSON, it will tell you what has changed, like the following example):
 
 ```json
