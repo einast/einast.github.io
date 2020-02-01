@@ -13,7 +13,15 @@ This caused parsing of the wrong section to the payload. This is now mitigated b
 
 ![](/images/ProPlusScriptMitigated.png)
 
+In addition, the payload generated from one of the first updates (*Semi-Annual Channel release: Version 1908: January 14*) was so large that the script hit the Teams message limit. I added some logic to check the size of the message card before posting, and if larger than x (I found 18KB to be the working limit for me), truncate the payload with a user defined text:
+
+![](/images/ProPlusScripttruncate.png)
+
 Scripts updated:
+
+Due to time, I keep the Azure Automation script updated since this is my preferred method
 - [Latest Azure Automation version I use](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzOfficeProPlusUpdates_(without_runas_account).ps1)
-- [My first Azure Automation version](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
+
+The first two versions are missing the truncate feature:
 - [The first generic version](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzOfficeProPlusUpdates.ps1)
+- [*My first Azure Automation version*](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
