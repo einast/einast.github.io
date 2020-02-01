@@ -7,9 +7,9 @@ categories: [Powershell, Office 365, Microsoft Teams, Azure Automation]
 
 Approximately once every month, Microsoft updates their Office 365 endpoints. These are the internet endpoints for all the Office 365 services you need to be aware of if you filter/block outbound traffic.
 
-The complete list is here (worldwide endpoints): https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges. If you use one of the other Office 365 clouds (21Vianet, Germany, US DOD or US government), links to those lists are provided in the above link. Also in those specific pages, you will find change log RSS feeds that this script uses. 
+The complete list is [here](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges) (worldwide endpoints). If you use one of the other Office 365 clouds (21Vianet, Germany, US DOD or US government), links to those lists are provided in the above link. Also in those specific pages, you will find change log RSS feeds that this script uses. 
 
-These endpoints are categorized based on their importance, more info here: https://aka.ms/pnc
+These endpoints are categorized based on their importance, more info [here](https://aka.ms/pnc).
 
 Working for customers with high security requirements using whitelisting, this might be handled automatically. Many proxy server and firewall vendors have features to ensure that rules are updated once Microsoft publish these updates. But not all. In addition, these vendor features are not always functioning 100% in my experience. Keeping rules updated ensures that traffic flow as expected so customers avoid any related issues.
 
@@ -69,5 +69,5 @@ The final result will look like this when posted to Teams:
 I might refine the output later, but for now it fulfills the goal of getting notified of changes.
 
 The scripts are located here:
-- [Generic version](https://github.com/einast/PS_M365_scripts/blob/master/O365EndpointUpdatesGeneric.ps1)
 - [Azure Automation version](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/O365EndpointUpdatesAzureAutomation.ps1)
+- [Generic version](https://github.com/einast/PS_M365_scripts/blob/master/O365EndpointUpdatesGeneric.ps1)
