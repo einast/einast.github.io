@@ -7,6 +7,8 @@ categories: [Powershell, Office 365, Microsoft Teams]
 
 This is part II of the series Teams message cards.
 
+<span style="background-color: #FFFF00">**UPDATED:** January 2020: Added some more options to the script to filter services and classifications</span>
+
 [Part I](https://thingsinthe.cloud/Teams-message-cards-Getting-Office-365-roadmap-into-channel/) started off easy, by parsing an RSS feed and present the data in a Teams channel.
 
 In this second part, we will dig a little deeper. We will look into how to get service health alerts from Office365 into a Teams channel. The use case is that we would like to be notified if any new or updated alerts are available in Teams, without the need of logging into the Office365 Admin portal. Key data from these alerts will be formatted as message cards, with color coding, and adding buttons if any links are available. The script will be run on a schedule (default is 15 minutes, but can be run as often as required).
@@ -85,6 +87,7 @@ $URI = 'Teams webhook URI'
 $Now = Get-Date
 $Minutes = '15'
 ```
+
 Like in the previous script, the variables you need to adjust are these:
 
 **\$ApplicationID** - from the generated application in step 1
@@ -97,6 +100,43 @@ Like in the previous script, the variables you need to adjust are these:
 
 **\$Minutes** - The last x minutes the script will look for updates. Default in the script is 15 minutes, as I run the script on that schedule.
 
+<span style="background-color: #FFFF00">**UPDATED:** January 2020:</span> One of my customers asked if it was possible to filter out alerts they didn't necessarily wanted to see. So I added some code to facilitate that. Adjust the following variables section as well. Fill in values for services and classifications you want to receive alerts for. I used *yes* to make it easier to read. Leave the services/classification you don't want to receive alerts for blank. Like the example below:
+
+```powershell
+# Office 365 Service(s) to monitor
+# Leave the one(s) you DON'T want to check empty (with '' ), add a value in the ones you WANT to check (I added 'yes' for readability
+
+$Exchange = 'yes'
+$Forms = ''
+$Intune = ''
+$MicrosoftKaizala = ''
+$SkypeforBusiness = ''
+$MicrosoftDefenderATP = ''
+$MicrosoftFlow = ''
+$FlowinMicrosoft365 = ''
+$MicrosoftTeams = 'yes'
+$MobileDeviceManagementforOffice365 = ''
+$OfficeClientApplications = ''
+$Officefortheweb = ''
+$OneDriveforBusiness = 'yes'
+$IdentityService = ''
+$Office365Portal = 'yes'
+$OfficeSubscription = ''
+$Planner = ''
+$PowerApps = ''
+$PowerAppsinMicrosoft365 = ''
+$PowerBI = ''
+$AzureInformationProtection = ''
+$SharePointOnline = 'yes'
+$MicrosoftStaffHub = ''
+$YammerEnterprise = ''
+
+# Classification(s) to monitor
+# Leave the one(s) you DON'T want to check empty (with '' ), add a value in the ones you WANT to check (I added 'yes' for readability)
+
+$Incident = 'yes'
+$Advisory = ''
+```
 
 The script will request new or updated incidents by using the provided application ID and key. It will color code the incident based on state.
 
@@ -125,6 +165,6 @@ Once your happy, revert the interval and you're ready to go.
 
 **5. Automation**
 
-To schedule the script, there are several ways. I prefer an Azure automation runbook. As the runbooks can only be run once per hour, you can either create 4 schedules, or set up another [Azure Logic Apps](https://blogs.technet.microsoft.com/stefan_stranger/2017/06/23/azur-logic-apps-schedule-your-runbooks-more-often-than-every-hour/)
+To schedule the script, there are several ways. I prefer an Azure automation runbook. As the runbooks can only be run once per hour, you can either create 4 schedules, or set up another using [Azure Logic Apps](https://blogs.technet.microsoft.com/stefan_stranger/2017/06/23/azur-logic-apps-schedule-your-runbooks-more-often-than-every-hour/)
 
 Part **III** to follow...

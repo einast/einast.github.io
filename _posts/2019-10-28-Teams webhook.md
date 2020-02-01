@@ -2,7 +2,7 @@
 layout: post
 title: Teams Message Cards - Posting useful information
 image: /images/TeamsO365Health.png
-categories: [Powershell, Office 365, Microsoft Teams]
+categories: [Powershell, Office 365, Microsoft Teams, Azure Automation]
 ---
 
 Microsoft Teams has become an important part of the everyday worklife. It is a great collaboration tool for companies, providing files, chat and telephony. To extend even further, it provides a lot of possibilities for integration with other services. Incoming webhooks is a way to integrate with other services, for example to present information.
@@ -17,3 +17,5 @@ Not being a Powershell guru, my goal was to have a template script that I easily
 - [Part II - Office 365 Health Status](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/): Further development of the script to present incident information from your Office 365 tenant
 - [Part III - Microsoft Message Center - Announcements](https://thingsinthe.cloud/Teamsmessagecards-MessageCenter/): This script is similar to the previous, but with some adaptions to present announcements for your Office 365 tenant.
 - [Part IV - Azure Resource Health](https://thingsinthe.cloud/AzureHealth/): This last post is about presenting service outage/incidents from your Azure tenant.
+- [Additional script #1 - Office Pro Plus updates announcements](https://thingsinthe.cloud/OfficeProPlus-updates/)
+- [Additional script #2 - Office 365 Endpoint updates](https://thingsinthe.cloud/AzureHealth/)
