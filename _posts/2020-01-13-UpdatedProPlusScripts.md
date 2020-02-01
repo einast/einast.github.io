@@ -24,4 +24,4 @@ Due to time, I keep the Azure Automation script updated since this is my preferr
 
 The first two versions are missing the truncate feature:
 - [The first generic version](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzOfficeProPlusUpdates.ps1)
-- [*My first Azure Automation version*](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
+- [My first Azure Automation version](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)

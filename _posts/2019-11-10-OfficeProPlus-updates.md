@@ -116,6 +116,12 @@ Running the script will provide output similar to this:
 
 As usual, I run the script using Azure Automation runbooks.
 
-You find the script here: [OfficeProPlusupdates.ps1](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
+Due to time, I keep the Azure Automation script updated since this is my preferred method
+- [Latest Azure Automation version I use](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzOfficeProPlusUpdates_(without_runas_account).ps1)
+
+The first two versions are missing the truncate feature:
+- [The first generic version](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzOfficeProPlusUpdates.ps1)
+- [My first Azure Automation version](https://github.com/einast/PS_M365_scripts/blob/master/OfficeProPlusupdates.ps1)
+
 
 ##### Disclaimer: The script is tested and working at the moment. If Microsoft changes the layout of their pages, things might stop working. ####
