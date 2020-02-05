@@ -8,7 +8,7 @@ permalink: /about/
 
 ![](/images/IMG_20170920_102445_small01.jpg)
 
-Thingsinthe.cloud is a site for documenting cloud related things I learn and figure out that might be of interest to others.
+Thingsinthe.cloud is a site for documenting cloud related things I learn and figure out that might be of interest to others. All opinions expressed on this site are my own, and do not necessarily represent those of my employer.
 
 **Whoami:**
 
