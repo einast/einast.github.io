@@ -73,7 +73,7 @@ Upload the JSON to a webhost, (through FTP using the PSFTP Powershell module. Th
 
 ***Important notice: Not all webhosts support JSON as good as others, so verify that before continuing. For this exercise I choose the free 000webhost.com, as they support this functionality.***
 
-To get some initial data and verify functionality, I ran the script manually. I have shared the script in my Github repo [here](https://github.com/einast/PS_M365_scripts/blob/master/HuaweiLTEusageToDAKBoard.ps1).
+To get some initial data and verify functionality, I ran the script manually. I have shared the script in my Github repo [here](https://github.com/einast/PS_M365_scripts/blob/master/Other%20scripts/HuaweiLTEusageToDAKBoard.ps1).
 
 **Present the data on the DAKboard**
 
