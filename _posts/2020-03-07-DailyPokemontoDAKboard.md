@@ -17,13 +17,13 @@ I created a Powershell script that picks a random Pokémon from Pokeapi.co and a
 The script is run on a schedule from an Azure Automation runbook at midnight every day, so the kids can check it out in the morning when they get up.
 
 **High-level**
- • Generate a random number between 1-807 (number of Pokémon in the Pokeapi)
- • Use that number to query the API, pulling data
- • Use the same number to pull an image of the Pokémon
- • Parse the data I would like to present into a JSON file
- • Upload the JSON file to a web server via FTP (using the PSFTP module)
- • Repeat nightly
- • Configure the DAKBoard with the Pokémon section, using the URL of the uploaded JSON payload
+- Generate a random number between 1-807 (number of Pokémon in the Pokeapi)
+- Use that number to query the API, pulling data
+- Use the same number to pull an image of the Pokémon
+- Parse the data I would like to present into a JSON file
+- Upload the JSON file to a web server via FTP (using the PSFTP module)
+- Repeat nightly
+- Configure the DAKBoard with the Pokémon section, using the URL of the uploaded JSON payload
 
 The script is pretty self-explanatory with comments.
 
