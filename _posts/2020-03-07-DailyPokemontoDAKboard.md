@@ -7,7 +7,7 @@ categories: [Powershell, DAKboard, Azure Automation]
 
 As the family already use a [DAKboard](https://dakboard.com/site) to keep track of our upcoming tasks and reminders, we often take a peek to see what's happening. To also involve my kids, I thought I'd create something for them.
 
-My kids love Pokémon. I mean really, really love them. Inspired by an addin to another similar type of screen, I'd like to present a random Pokémon every day.
+My kids love Pokémon. I mean really, really love them. Inspired by an addin to another similar type of screen ([MagicMirror](https://magicmirror.builders/) and the addin [MMM-DailyPokemon](https://github.com/NolanKingdon/MMM-DailyPokemon)), I'd like to present a random Pokémon every day.
 
 I created a Powershell script that picks a random Pokémon from Pokeapi.co and an image from pokeres.bastionbot.org, pull some stats, format it as JSON and present it on the DAKBoard. My son was the subject matter expert on what to present (also teaching me many things about Pokémon at the same time).
 
