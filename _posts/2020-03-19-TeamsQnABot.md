@@ -53,7 +53,7 @@ Remember that the format has to be in sequence, with question and answer, questi
 
 If you want to have Chit-chat enabled, select a personality. I dropped this for now. According to Microsoft, "Adding chit-chat to your bot makes it more conversational and engaging".
 
-Click Create your KB. It will take a few minutes, depending on the amount of questions and answers.
+Click **Create your KB**. It will take a few minutes, depending on the amount of questions and answers.
 
 ![](/images/bot08.png)
 
@@ -62,7 +62,7 @@ Once completed, you can test your KB. Fill in a question from the FAQ and verify
 
 ![](/images/bot11.png)
 
-Once you're happy, click Save and train.
+Once you're happy, click **Save and train**.
 
 ![](/images/bot13.png)
 
@@ -72,7 +72,7 @@ You will be prompted for setting up the Web App Bot. Fill in the fields.
 
 ![](/images/bot14.png)
 
-Once completed, go to Channels and select Add a featured channel, then Teams.
+Once completed, go to **Channels** and select **Add a featured channel**, then **Teams**.
 
 ![](/images/bot15.png)
 
@@ -80,11 +80,11 @@ Verify that the channel is Running
 
 ![](/images/bot16.png)
 
-Go to App Service Settings, and select Configuration
+Go to **App Service Settings**, and select **Configuration**.
 
 ![](/images/bot17.png)
 
-Click Edit on MicrosoftAppId, and copy the Value. We need that later.
+Click **Edit** on MicrosoftAppId, and copy the Value. We need that later.
 
 ![](/images/bot18.png)
 
@@ -110,7 +110,7 @@ I selected scope to be **Personal** (chat) and **Team** (channel). Click **Save*
 
 ![](/images/bot184.png)
 
-Go to Finish and Test and distribute. Here you can either Install the app, or Download it.
+Go to **Finish** and **Test and distribute**. Here you can either Install the app, or Download it.
 
 ![](/images/bot185.png)
 
@@ -128,7 +128,7 @@ Select the package you downloaded.
 
 ![](/images/bot21.png)
 
-Click Add to a team
+Click **Add to a team**
 
 ![](/images/bot22.png)
 
@@ -150,5 +150,5 @@ You can also ask a question in the channel, by at mention the bot, then ask the 
 
 ![](/images/bot31.png)
 
-Now we have a working bot in Teams that can answer any type of question you have in your KB.
+Now we have a working bot in Teams that can answer any type of question you have in your KB. You can now develop it further, adding multi-turn questions etc.
 
