@@ -7,7 +7,7 @@ categories: [Office 365, Microsoft Teams, Azure Automation, Pushover]
 
 In these Covid-19 times, Office 365 (soon to be Microsoft 365) is becoming more and more important (and popular).
 
-The health script I wrote a while back is a great way to keep track of any issues that arise in Office 365 (you'll find the post [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/). And ufortunately, there have been a lot of issues since everybody started working from home. Microsoft even altered their services to keep up with the increased usage load.
+The health script I wrote a while back is a great way to keep track of any issues that arise in Office 365 (you'll find the post [here](https://thingsinthe.cloud/Teams-message-cards-Office-365-Health-status/). And unfortunately, there have been a lot of issues since everybody started working from home. Microsoft even altered their services to keep up with the increased usage load.
 
 However, as the script posts to Microsoft Teams, what happens if Teams struggle, so the script is unable to post to the Teams channel? Or if the script is unable to run?
 
@@ -41,7 +41,7 @@ In addition we also need the user token. You can find it in **Settings** in Push
 
 Repeat the step above, by creating an Azure Automation variable for your user key as well. **This key can also be a group key if you want to notify a group**.
 
-Now we are ready to use this. Grab the latest version of the script from -----
+Now we are ready to use this. Grab the latest version of the script from [here](https://github.com/einast/PS_M365_scripts/blob/master/AzureAutomation/AzO365ServiceHealth.ps1/).
 
 Adapt the variables section to your environment.
 
