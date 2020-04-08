@@ -21,7 +21,7 @@ In Pushover, click **Apps & Plugins**, and then **Create a New Application / API
 
 ![](/images/Pushover01.png)
 
-Fill in **Name**, a *Description**, **URL** (optional) and upload an **Icon**. Click **Create Application**.
+Fill in **Name**, a **Description**, **URL** (optional) and upload an **Icon**. Click **Create Application**.
 
 Click you new application.
 
