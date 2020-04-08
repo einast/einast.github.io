@@ -49,7 +49,7 @@ The section you need to change, is the **Pushover notification** part. Comment o
 
 Change *PushoverToken* and *PushoverUser* to match your Azure Automation Variables. Set *Pushover* to **yes** or some other value. I use yes for readability.
 
-```Powershell
+```powershell
 # ------------------------------------- USER DEFINED VARIABLES -------------------------------------
 
 $ApplicationID = Get-AutomationVariable -Name 'AzApplicationID'
