@@ -92,7 +92,7 @@ In addition, I integrated Azure AD authentication, so that users I give access t
 
 #### Extra setup:
 
- - Install Raspbian on the Raspberry Pi, run updates, [assemble the screen](https://thepihut.com/blogs/raspberry-pi-tutorials/raspberry-pi-7-touch-screen-assembly-guideassemble) and install everything in the case.
+ - Install Raspbian on the Raspberry Pi, run updates, [assemble the screen](https://thepihut.com/blogs/raspberry-pi-tutorials/raspberry-pi-7-touch-screen-assembly-guide) and install everything in the case.
 - Due to the case, the screen is mounted upside down. Flip the picture 180 degrees by adding this to /boot/config.txt:
 ```bash
 lcd_rotate=2
