@@ -74,11 +74,11 @@ There are plenty of information out there about this, so the setup was rather qu
 
 Creating the dashboards is pretty straight forward, and after a short while I was happy. As I purchased a 3-pack of sensors, I placed them around the property. One in the greenhouse, one in the basement and the last in the shed hosting our water supply. I will probably adjust them as I go along.
 
-![](/images/grafana.png)
+![](/images/Grafana.png)
 
 The nice thing about Grafana, is that it is also possible to set up alerts. Microsoft Teams is supported, as well as Pushover and a ton of other providers.
 
-![](/images/grafanaalerts.png)
+![](/images/GrafanaAlerts.png)
 
 So if the temperature in the greenhouse is over for example 35 degrees, I can get a push notification.
 
