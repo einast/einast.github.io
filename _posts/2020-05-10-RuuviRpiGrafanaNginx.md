@@ -7,7 +7,9 @@ categories: [Raspberry Pi, Home Automation, Grafana, nginx, Ruuvi]
 
 Last year we built a greenhouse in our garden. This year is the first full season of usage, and we look forward to fresh vegetables from our own garden.
 
-However, as temperatures often rise to critical levels, it is important to keep track of the changes. I thought about adding another sensor to my Netatmo, but that is not supported. After searching online, I came across Ruuvi, which are Bluetooth  tags (BLE) for sending temperature, humidity, air pressure and motion to either an app on your smartphone, or to a central hub. However, the app is limited, and only shows the current data (no trends or historical data).
+However, as temperatures often rise to critical levels, it is important to keep track of the changes. I thought about adding another sensor to my Netatmo, but that is not supported. After searching online, I came across Ruuvi, which are Bluetooth  tags (BLE) for sending temperature, humidity, air pressure and motion to either an app on your smartphone, or to a central hub. However, I would like to centrally collect data over time to see trends and historical data.
+
+![](/images/ruuvitag.jpg)
 
 I found out that many people use a Raspberry Pi as the hub, gather the data there in a database, and present it via Grafana dashboards. 
 
