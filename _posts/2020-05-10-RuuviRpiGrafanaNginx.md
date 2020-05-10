@@ -38,7 +38,7 @@ The Ruuvi tag(s) will broadcast sensor data over Bluetooth. The Raspberry Pi wil
 
 As my ISP is dynamically assigning IPs, I need to use a crontab to run a script for checking my IP, and if changed since last run, update the DNS record. I use Joker.com for my domains, and they provide a free DDNS where you can use your own domains.
 
-####Setup:
+#### Setup:
 
 As many have documented the setup, I will only provide links:
 
