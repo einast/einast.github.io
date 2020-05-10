@@ -82,7 +82,7 @@ The nice thing about Grafana, is that it is also possible to set up alerts. Micr
 
 So if the temperature in the greenhouse is over for example 35 degrees, I can get a push notification.
 
-In addition, I integrated Azure AD authentication, so that users I give access to the Grafana app in my Azure AD tenant can login to Grafana. These users all need to use MFA, so that heigthen security.
+In addition, I integrated Azure AD authentication, so that users I give access to the Grafana app in my Azure AD tenant can login to Grafana. These users all need to use MFA, so that increases security.
 
  I followed the documentation at Grafana, found [here](https://grafana.com/docs/grafana/latest/auth/azuread/#azure-ad-oauth2-authentication). Pretty straight forward, *the only thing to remember is that the redirect URI (reply URL) defined in the Azure app registration must match the root_url in grafana.ini*.
 
