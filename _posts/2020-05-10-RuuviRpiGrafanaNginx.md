@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Showing temperature and humidity data with Ruuvitags and Grafana
-image: /images/ruuvi.png
+image: /images/Ruuvi.png
 categories: [Raspberry Pi, Home Automation, Grafana, nginx, Ruuvi]
 ---
 
