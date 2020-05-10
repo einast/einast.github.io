@@ -38,7 +38,7 @@ The Ruuvi tag(s) will broadcast sensor data over Bluetooth. The Raspberry Pi wil
 
 As my ISP is dynamically assigning IPs, I need to use a crontab to run a script for checking my IP, and if changed since last run, update the DNS record. I use Joker.com for my domains, and they provide a free DDNS where you can use your own domains.
 
-#### Setup:
+####Setup:
 
 As many have documented the setup, I will only provide links:
 
@@ -88,7 +88,7 @@ In addition, I integrated Azure AD authentication, so that users I give access t
 
  In addition, you can remove the default login box if you just want to use Azure authentication.
 
- #### Extra setup:
+#### Extra setup:
 
  - Install Raspbian on the Raspberry Pi, run updates, [assemble the screen](https://thepihut.com/blogs/raspberry-pi-tutorials/raspberry-pi-7-touch-screen-assembly-guideassemble) and install everything in the case.
 - Due to the case, the screen is mounted upside down. Flip the picture 180 degrees by adding this to /boot/config.txt:
