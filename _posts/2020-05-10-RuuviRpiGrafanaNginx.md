@@ -46,7 +46,7 @@ As many have documented the setup, I will only provide links:
 
 - [Setting up Raspberry Pi as a Ruuvi Gateway](https://blog.ruuvi.com/rpi-gateway-6e4a5b676510). I used this as a starting point (I did not set up WiFi hotspot or enabled anonymous access)
 - [Nginx setup with Let's Encrypt](https://gist.github.com/xoseperez/e23334910fb45b0424b35c422760cb87#nginx). From here I used the Nginx and Certbot part (no Node-Red etc). I have adjusted my Nginx configuration to make it more secure, also I ran some SSL tests to verify.
-- In addition you need to forward port 443 to your server for accessing it from the outside.
+- In addition you need to forward port 443 TCP to your server for accessing it from the outside. Also port 80 TCP for Let's Encrypt HTTP challenge if not able to use DNS challenge.
 - Joker.com DDNS renewal script (remember to install **dnsutils**, if not **dig** will fail), run periodically via crontab (for example every 15 minutes):
 
 ```bash
