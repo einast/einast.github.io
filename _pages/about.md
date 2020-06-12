@@ -17,7 +17,7 @@ All opinions expressed on this site are my own, and do not necessarily represent
 - **Einar Asting**
 - Always learning
 - Cloud first
-- Working as a cloud consultant at [Crayon AS](https://www.crayon.com/nb-NO/)
+- Working as a cloud consultant at [Experis AVAN](https://experisavan.no/)
 - Dad and husband
 - More info at [LinkedIn](https://www.linkedin.com/in/easting/)
 
