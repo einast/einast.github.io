@@ -25,7 +25,7 @@ Since time was of the essence, I decided to use a CSV file with the necessary da
 I created a script for this task, with only one variable that the customer needed to change, which is the CSV file.
 
 The CSV file has three columns:
-Name,internal.email,external.email
+**Name,internal.email,external.email**
 
 Where:
 
