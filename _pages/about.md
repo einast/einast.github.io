@@ -23,4 +23,4 @@ All opinions expressed on this site are my own, and do not necessarily represent
 
 Feel free to reach out
 
-**Microsoft Azure &#124; Microsoft 365 &#124; TOGAF Certified &#124; PRINCE2 Agile Foundation &#124; ITIL 4 Foundation**
+*Microsoft Azure &#124; Microsoft 365 &#124; TOGAF Certified &#124; PRINCE2 Agile Foundation &#124; ITIL 4 Foundation*
