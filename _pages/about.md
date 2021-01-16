@@ -21,6 +21,6 @@ All opinions expressed on this site are my own, and do not necessarily represent
 - Dad and husband
 - More info at [LinkedIn](https://www.linkedin.com/in/easting/)
 
-Feel free to reach out
+Feel free to reach out.
 
 *Microsoft Azure &#124; Microsoft 365 &#124; TOGAF Certified &#124; PRINCE2 Agile Foundation &#124; ITIL 4 Foundation*
