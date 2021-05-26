@@ -73,3 +73,5 @@ Once I have approved the sign-in, I get redirected to the Code Server service.
 ![](/images/Pomerium-06.png)
 
 Now I have secure access to my Code Server, and can use it from anywhere.
+
+Using an IAP is a way to ensure secure access to services, including services with little or no builtin authentication mechanisms.
