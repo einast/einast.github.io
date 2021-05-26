@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Securing access to internal resources using an Identity-Aware Proxy
-image: /images/pomerium-logo.jpeg
+image: /images/pomerium-logo.png
 categories: [Pomerium, Azure, Containers, Docker]
 ---
 
