@@ -5,7 +5,7 @@ image: /images/O365_Monthly_updates_(Office365_Test)_Microsoft_Teams-preview.png
 categories: [Powershell, Office 365, Microsoft Teams, OfficeProPlus]
 ---
 
-<span style="background-color: #FFFF00">**UPDATED:** January 2020: Updates to the script to ensure the 2020 version of Microsoft's pages parse correctly. Also added a truncate feature to handle too large cards (which we had early January, causing the script to fail posting an update). Please refer to [this](https://thingsinthe.cloud/UpdatedProPlusScripts/) post for more details.</span>
+<span style="background-color: #FFFF00">**UPDATED:** June 2021: Microsoft changed channel names and URLs causing the script to fail. Updates have been implemented to ensure the functionality works with the changes by Microsoft.</span>
 
 
 At customers, we normally have users split on the different Office ProPlus update channels. A few users on the Monthly channel, some more on the Semi-Annual Channel (targeted), and the major set of users on the Semi-Annual Channel. This is to be able to test new versions and features in a controlled matter. 
